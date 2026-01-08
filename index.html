@@ -26,6 +26,7 @@
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column; /* This line fixes the issue! */
             justify-content: center;
             align-items: center;
             min-height: 100vh;
@@ -207,6 +208,14 @@
                 justify-content: center;
             }
         }
+        footer {
+    text-align: center;
+    padding: 3rem 0;
+    margin-top: 2rem; /* Reduced from 4rem if you want it tighter */
+    border-top: 1px solid var(--box-color);
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
     </style>
 </head>
 <body>
@@ -288,8 +297,9 @@
                 <img src="images/chibis.png" alt="Eleanor Chibis" class="extra-images">
                 </div>
 
-        </div>
-    </div>
+        </div> </div> <footer>
+        <p>Eleanor Bloom © 2026 | Made by <a href="https://janitorai.com/profiles/1bd90090-77a5-4a95-9321-a2183e3b125c_profile-of-♡-rin-rin♡">♡Rin-Rin♡</a> on Janitorai</p>
+    </footer>
 
 </body>
 </html>
